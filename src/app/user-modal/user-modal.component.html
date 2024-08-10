@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>User Details</h1>
+<div mat-dialog-content>
+  <p><strong>Name:</strong> {{ data.name }}</p>
+  <p><strong>Email:</strong> {{ data.email }}</p>
+  <p><strong>Title:</strong> {{ data.title }}</p>
+  <p><strong>Department:</strong> {{ data.department }}</p>
+  <p><strong>Status:</strong> {{ data.status }}</p>
+  <p><strong>Role:</strong> {{ data.role }}</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Close</button>
+</div>

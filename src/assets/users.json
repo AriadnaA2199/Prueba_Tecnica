@@ -1,0 +1,53 @@
+
+[
+  {
+    "name": "Lindsay Walton",
+    "email": "lindsay.walton@example.com",
+    "title": "Front-end Developer",
+    "department": "Optimization",
+    "status": "Active",
+    "role": "Member"
+  }
+,
+  {
+    "name": "Courtney Henry",
+    "email": "courtney.henry@example.com",
+    "title": "Designer",
+    "department": "Intranet",
+    "status": "Active",
+    "role": "Admin"
+  },
+  {
+    "name": "Tom Cook",
+    "email": "tom.cook@example.com",
+    "title": "Director of Product",
+    "department": "Directives",
+    "status": "Active",
+    "role": "Member"
+  },
+  {
+    "name": "Whitney Francis",
+    "email": "whitney.francis@example.com",
+    "title": "Copywriter",
+    "department": "Program",
+    "status": "Active",
+    "role": "Admin"
+  },
+  {
+    "name": "Leonard Krasner",
+    "email": "leonard.krasner@example.com",
+    "title": "Senior Designer",
+    "department": "Mobility",
+    "status": "Active",
+    "role": "Owner"
+  },
+  {
+    "name": "Floyd Miles",
+    "email": "floyd.miles@example.com",
+    "title": "Principal Designer",
+    "department": "Security",
+    "status": "Active",
+    "role": "Member"
+  }
+
+]

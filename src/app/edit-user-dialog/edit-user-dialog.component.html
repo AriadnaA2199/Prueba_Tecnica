@@ -1,0 +1,49 @@
+<div class="modal" tabindex="-1" role="dialog" [ngClass]="{'show': true}" style="display: block;">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">{{ isEdit ? 'Edit User' : 'Add User' }}</h5>
+        <button type="button" class="close" aria-label="Close" (click)="closeModal()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label for="name">Name <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" id="name" formControlName="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email <span class="text-danger">*</span></label>
+            <input type="email" class="form-control" id="email" formControlName="email" required>
+          </div>
+          <div class="form-group" *ngIf="!isEdit">
+            <label for="title">Title</label>
+            <input type="text" class="form-control" id="title" formControlName="title">
+          </div>
+          <div class="form-group" *ngIf="!isEdit">
+            <label for="department">Department</label>
+            <input type="text" class="form-control" id="department" formControlName="department">
+          </div>
+          <div class="form-group">
+            <label for="role">User Permissions <span class="text-danger">*</span></label>
+            <select id="role" class="form-control" formControlName="role" required>
+              <option *ngFor="let role of roles" [value]="role">{{ role }}</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="status">Status <span class="text-danger">*</span></label>
+            <div class="custom-switch">
+              <input type="checkbox" class="custom-control-input" id="status" formControlName="status" (change)="toggleStatus($event)">
+              <label class="custom-control-label" for="status"></label>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end mt-4">
+            <button type="button" class="btn btn-secondary mr-2" (click)="closeModal()">Cancel</button>
+            <button type="submit" class="btn btn-primary">Save</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

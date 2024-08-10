@@ -1,0 +1,45 @@
+<div class="container my-4">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2>Users</h2>
+    <button class="btn btn-primary" (click)="openAddModal()">Add user</button>
+  </div>
+  <hr class="my-4">
+  <p>A list of all the users in your account including their name, title, email, and role.</p>
+  <table class="table table-borderless">
+    <thead>
+      <tr>
+        <th class="font-weight-bold">Name</th>
+        <th class="font-weight-bold">Title</th>
+        <th class="font-weight-bold">Status</th>
+        <th class="font-weight-bold">Role</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>
+          <div class="d-flex align-items-center">
+            <img [src]="user.avatar || 'https://via.placeholder.com/40'" alt="{{ user.name }}" class="avatar">
+            <div>
+              <div class="user-name">{{ user.name }}</div>
+              <div class="text-muted">{{ user.email }}</div>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="font-weight-bold">{{ user.title }}</div>
+          <div class="text-muted">{{ user.department }}</div>
+        </td>
+        <td>
+          <span [ngClass]="user.status === 'Active' ? 'badge badge-success' : 'badge badge-secondary'">
+            {{ user.status }}
+          </span>
+        </td>
+        <td>{{ user.role }}</td>
+        <td>
+          <button class="btn btn-outline-success btn-sm" (click)="openEditModal(user)">Edit</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

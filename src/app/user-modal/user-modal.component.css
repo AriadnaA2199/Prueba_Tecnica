@@ -1,0 +1,155 @@
+/* Estilo global del modal */
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1050;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-dialog {
+  position: relative;
+  width: 90%;
+  max-width: 500px; /* Tamaño máximo para el modal */
+  margin: 1.75rem auto;
+  pointer-events: none;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  pointer-events: auto;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.modal-title {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.close {
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #333;
+}
+
+.modal-body {
+  padding: 1rem;
+}
+
+/* Estilo para los campos del formulario */
+.form-group {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd; /* Línea de separación entre campos */
+  padding-bottom: 1rem;
+}
+
+/* Quitar el borde de la última línea */
+.form-group:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* Botones */
+.btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+  border: 1px solid #6c757d;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  margin-right: 0.5rem;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #007bff;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  margin-left: 0.5rem;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+/* Alineación y espaciado */
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .btn-primary {
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .btn-secondary {
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .modal-dialog {
+    margin: 0.5rem;
+    width: 95%;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn-primary {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .btn-secondary {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .modal-dialog {
+    margin: 0.5rem;
+    width: 95%;
+  }
+}

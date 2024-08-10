@@ -1,0 +1,191 @@
+body {
+  font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0 15px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table th, .table td {
+  vertical-align: middle;
+  font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px 15px;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.badge-success {
+  background-color: #e9f5e9; /* Verde más claro */
+  color: #155724;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.badge-secondary {
+  background-color: #6c757d;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.btn {
+  border-radius: 4px;
+}
+
+.btn-primary {
+  background-color: #6366f1;
+  border-color: #6366f1;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.btn-primary:hover {
+  background-color: #4f46e5;
+  border-color: #4f46e5;
+}
+
+.btn-outline-success {
+  color: #6366f1;
+  border: none;
+  background: none;
+  padding: 0.25rem 0.5rem;
+  font-size: 14px;
+}
+
+.btn-outline-success:hover {
+  text-decoration: underline;
+  color: #4f46e5;
+}
+
+.text-muted {
+  color: #6c757d;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+hr.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid #ddd;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+p {
+  margin-top: -0.5rem;
+  font-size: 1.0rem;
+  font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .avatar {
+    width: 30px;
+    height: 30px;
+  }
+
+  .btn-primary {
+    font-size: 14px;
+    padding: 0.5em 1em;
+  }
+
+  .btn-link {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .table {
+    font-size: 12px;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .avatar {
+    width: 25px;
+    height: 25px;
+  }
+
+  .btn-primary {
+    font-size: 12px;
+    padding: 0.5em;
+  }
+
+  .btn-link {
+    font-size: 12px;
+  }
+
+  th, td {
+    padding: 0.5em;
+    text-align: left;
+  }
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+}
+
+.form-group:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.table thead th {
+  border-bottom: 2px solid #ddd;
+  text-align: left;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.table tbody tr:last-of-type {
+  border-bottom: none;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.font-weight-bold {
+  font-weight: bold;
+}

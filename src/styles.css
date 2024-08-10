@@ -1,0 +1,17 @@
+html, body {
+  font-size: 14px; /* Ajusta este tamaño según tus necesidades */
+  font-family: 'Montserrat', sans-serif; /* Cambiado a Montserrat */
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500; /* Ajustar el peso de la fuente */
+  margin: 0;
+}
+
+p, a, li {
+  font-size: 19px;
+  line-height: 1.5; /* Espaciado entre líneas */
+}
